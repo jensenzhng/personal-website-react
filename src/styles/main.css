@@ -5,12 +5,8 @@
     color: white;
 }
 
-#body {
+#body { 
     background-color: rgb(16, 16, 16);
-}
-
-*:not(#body) {
-    transition-duration: 0.5s;
 }
 
 /* width */

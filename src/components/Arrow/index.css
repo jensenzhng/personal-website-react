@@ -32,3 +32,9 @@
       transform: translateY(0px);
     }
   }
+
+  @media only screen and (max-height: 550px){
+    .arrow {
+        display: none;
+    }
+  }
