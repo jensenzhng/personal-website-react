@@ -5,7 +5,7 @@ import particlesConfig from '../assets/particles.js'
 class ParticlesBackground extends React.Component {
     render() {
         return(
-            <div style={{ position: 'absolute'}} id="particles-js">
+            <div id="particles-js">
                 <Particles height="100vh" params={particlesConfig} />
             </div>
         )
