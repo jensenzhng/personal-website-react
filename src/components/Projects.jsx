@@ -11,6 +11,6 @@ class Projects extends React.Component {
             </div>
         )
     }
-    }
+}
 
 export default Projects;
