@@ -1,0 +1,42 @@
+* {
+    /* cursor: url('../images/cursor.png') 10 10, auto; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    color: white;
+}
+
+*:not(#particles-js) {
+    transition-duration: 0.5s;
+}
+
+.container {
+    background-color: rgb(16, 16, 16);
+}
+
+#particles-js {
+    background-color: #000000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #000000;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.475);
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    }
