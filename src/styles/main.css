@@ -9,6 +9,10 @@
     background-color: rgb(16, 16, 16);
 }
 
+*:not(#body) {
+    transition-duration: 0.5s;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -30,8 +34,6 @@
     }
 
     /*  */
-
-    .wrapper {transition-duration: 0.5s;}
 
     .wrapper p, h1 {
         color: white;
