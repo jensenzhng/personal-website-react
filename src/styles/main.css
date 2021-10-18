@@ -5,20 +5,8 @@
     color: white;
 }
 
-*:not(#particles-js) {
-    transition-duration: 0.5s;
-}
-
-.container {
+#body {
     background-color: rgb(16, 16, 16);
-}
-
-#particles-js {
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    /* height: 100vh; */
 }
 
 /* width */
@@ -42,6 +30,8 @@
     }
 
     /*  */
+
+    .wrapper {transition-duration: 0.5s;}
 
     .wrapper p, h1 {
         color: white;

@@ -24,11 +24,11 @@ class FrostedPanel extends React.Component {
                         </a>
                     </div>
                 </div>
-                <div class="arrow">
+                {/* <div class="arrow">
                     <div class="scroll">
                         <h2>↓ (scroll)</h2>
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }
