@@ -1,7 +1,7 @@
 import './styles/main.css';
 import Projects from './components/Projects.jsx'
 import ParticlesBackground from './components/ParticlesBackground.jsx';
-import FrostedPanel from './components/FrostedPanel.jsx';
+import FrostedPanel from './components/FrostedPanel/';
 
 function App() {
   return (
