@@ -1,16 +1,18 @@
 import './styles/main.css';
 // import Projects from './components/Projects/'
-import ParticlesBackground from './components/ParticlesBackground/';
-import FrostedPanel from './components/FrostedPanel/';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Main from './components/Main'
 
 function App() {
   return (
     <div className="App">
-      <FrostedPanel/>
-      <ParticlesBackground />
-      {/* <div className="content">
-        <Projects></Projects>
-      </div> */}
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Main></Main>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
