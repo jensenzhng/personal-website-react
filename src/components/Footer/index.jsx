@@ -1,19 +1,26 @@
 import React from 'react';
 import './index.css'
 
-function Footer() {
-    const playedGame = window.localStorage.getItem('playedGame');
-    console.log(playedGame);
+class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            playedGame: window.localStorage.getItem('playedGame')
+        }
+    }
 
-    return (
-        <footer>
-            {
-                (playedGame === null)
-                ? <a id="secret" href="/game"> hmmm, i wonder what this is... </a>
-                : <a id="secret" href="/secret"> what, a secret link? </a>
-            }
-        </footer>
-    )
+
+    render() {
+        return (
+            <footer>
+                {
+                    (this.state.playedGame === null)
+                    ? <a id="secret" href="/game"> hmmm, i wonder what this is... </a>
+                    : <a id="secret" href="/secret"> what, a secret link? </a>
+                }
+            </footer>
+        )
+    }
 
 }
  
