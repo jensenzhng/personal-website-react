@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" component={Main} />
           <Route path="/secret" component={Secret} />
+          <Route path="/" component={Main} />
           <Route component={Main} />
         </Switch>
       </Router>
