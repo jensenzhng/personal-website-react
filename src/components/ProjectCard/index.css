@@ -6,6 +6,7 @@
 }
 
 .card a {
+    transition-duration: 0.5s;
     float: right;
     text-decoration: none;
     color: white;
