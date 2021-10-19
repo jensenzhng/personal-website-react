@@ -7,7 +7,10 @@ function returnHome () {
 }
 
 function hi () {
-    console.log('hi')
+    document.getElementById("startButton").classList.add("peekaboo")
+        document.getElementById("home").classList.add("peekaboo")
+        document.getElementById("startGame").classList.add("peekaboo")
+        document.getElementById("gameBoardContainer").classList.remove("peekaboo")
 }
 
 let Game = () => {

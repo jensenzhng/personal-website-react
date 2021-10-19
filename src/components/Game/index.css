@@ -20,7 +20,7 @@ button:hover {
 }
 
 #gameScore {
-    font-size: 50px;
+    font-size: 30px;
     font-family: Roboto;
     color: rgb(170, 0, 255);
 
@@ -42,5 +42,5 @@ button:hover {
 .startButton {
     font-family: Roboto;
     color: rgb(170, 0, 255);
-    font-size: 50px;
+    font-size: 40px;
 }
