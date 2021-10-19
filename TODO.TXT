@@ -1,0 +1,3 @@
+spotify tracker working with
+game page w/ canvas workings 
+secret thingy
