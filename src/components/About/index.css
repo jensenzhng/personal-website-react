@@ -1,0 +1,41 @@
+.about {
+    transition-duration: 0.5s;
+    color: white;
+    padding: 5rem 0 2rem 0;
+    /* text-align: center; */
+    /* margin: 0 5vw 0 5vw; */
+    margin: auto;
+    width: 50%;
+
+    /* padding: 10px; */
+}
+
+@media only screen and (max-width: 1200px){
+    .about {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 693px){
+    .about {
+        margin: auto;
+        width: 85%;
+    }
+}
+
+.about h3 {
+    padding: 1.5rem 0 1.5rem 0;
+    font-weight: 400;
+}
+
+
+.about h1, h2 {
+    background: #0563F1;
+    background: -webkit-linear-gradient(to right, #5698fc 0%, #ff00ee 50%);
+    background: -moz-linear-gradient(to right, #5698fc 0%, #ff00ee 50%);
+    background: linear-gradient(to right, #5698fc 0%, #ff00ee 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

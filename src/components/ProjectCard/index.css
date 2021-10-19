@@ -1,0 +1,26 @@
+.card {
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card a {
+    float: right;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+.card a:hover {
+    opacity: 1;
+}
+
+.card h6 {
+    color: gray;
+}
+
+.card p, h6 {
+    margin-top: 0.5rem;
+}
