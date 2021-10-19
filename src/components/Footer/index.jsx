@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css'
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
         <footer>
             {
                 (playedGame === null)
-                ? <a id="secret" href="/secret"> hmmm, i wonder what this is... </a>
+                ? <a id="secret" href="/game"> hmmm, i wonder what this is... </a>
                 : <a id="secret" href="/secret"> what, a secret link? </a>
             }
         </footer>

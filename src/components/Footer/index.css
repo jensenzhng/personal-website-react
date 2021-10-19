@@ -9,8 +9,9 @@ footer {
   footer a {
     text-decoration: none;
     color: white;
+    transition-duration: 0.2s;
   }
   
   footer a:hover {
-    color: grey;
+    color: rgb(194, 194, 194);
   }
