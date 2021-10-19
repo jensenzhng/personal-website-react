@@ -1,7 +1,7 @@
 import './styles/main.css';
-// import Projects from './components/Projects/'
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Main from './components/Main'
+import Secret from './components/Secret'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" component={Main} />
+          <Route path="/secret" component={Secret} />
           <Route component={Main} />
         </Switch>
       </Router>
