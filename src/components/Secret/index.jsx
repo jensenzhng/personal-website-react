@@ -1,26 +1,38 @@
+
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom'
+import './index.css'
 
-function Secret() {
-    let history = useHistory();
-    const [playedGame, setPlayedGame] = useState(window.localStorage.getItem('playedGame'))
-
-    const handlePageLoad = () => {
-        history.push('/game');
+class Secret extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            playedGame: window.localStorage.getItem('playedGame')
+        }
     }
 
-    if (playedGame === null) {
-        handlePageLoad();
+    handlePageLoad = () => {
+        window.location.href = '/game';
     }
 
-    return (
-        <div className="secret">
-            <h1>hey... you found my not-so-secret secret page...</h1>
-            <h3> thanks for taking the effort to read through my page and play snake with me. <br/><br/> this section's a work in progress. i'll figure out what to put here later. contact me if you have any suggestions :) <br/><br/> for now, here is a picture of me in my pj's 😀</h3>
-            <img src="images/ilookdumb.jpeg" alt=""></img>
-            <button id="home" onclick="window.location.href = '/';">return home</button>
-        </div>
-    );
+    returnHome = () => {
+        window.location.href = '/';
+    }
+
+    render() {
+        if (this.state.playedGame === null) {
+            this.handlePageLoad();
+            return;
+        }
+        
+        return (
+            <div className="secret">
+                <h1>hey... you found my not-so-secret secret page...</h1>
+                <h3> thanks for taking the effort to read through my page and play snake with me. <br/><br/> this section's a work in progress. i'll figure out what to put here later. contact me if you have any suggestions :) <br/><br/> for now, here is a picture of me in my pj's 😀</h3>
+                <img src="../images/ilookdumb.jpeg" alt=""></img>
+                <button id="home" onClick={this.returnHome}>return home</button>
+            </div>
+        );
+    }
 
 }
  

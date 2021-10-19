@@ -1,0 +1,47 @@
+button {
+    border: none;
+    background: rgb(170, 0, 255);
+    border-radius: 4px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    color: white;
+}
+  
+button:hover {
+    background: rgba(217, 0, 255, 0.71);
+}
+
+.gameCanvas {
+    border: 1px solid rgb(170, 0, 255);
+}
+
+#gameScore {
+    font-size: 50px;
+    font-family: Roboto;
+    color: rgb(170, 0, 255);
+
+}
+
+.bigDiv {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+.peekaboo {
+    display: none;
+}
+
+.startButton {
+    font-family: Roboto;
+    color: rgb(170, 0, 255);
+    font-size: 50px;
+}
