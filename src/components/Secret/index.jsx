@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import './index.css'
+import ilookdumb from '../../images/ilookdumb.jpeg'
 
 class Secret extends React.Component {
     constructor(props) {
@@ -28,8 +29,8 @@ class Secret extends React.Component {
             <div className="secret">
                 <h1>hey... you found my not-so-secret secret page...</h1>
                 <h3> thanks for taking the effort to read through my page and play snake with me. <br/><br/> this section's a work in progress. i'll figure out what to put here later. contact me if you have any suggestions :) <br/><br/> for now, here is a picture of me in my pj's 😀</h3>
-                <img src="../images/ilookdumb.jpeg" alt=""></img>
-                <button id="home" onClick={this.returnHome}>return home</button>
+                <img src={ilookdumb} alt=""></img>
+                <button id="home" onClick={this.returnHome} style={{display: 'block'}}>return home</button>
             </div>
         );
     }
