@@ -174,13 +174,11 @@ window.onload = function () {
     });
 
     function startGame() {
-
         document.getElementById("startButton").classList.add("peekaboo")
         document.getElementById("startGame").classList.add("peekaboo")
         document.getElementById("homeButton").classList.add("peekaboo")
         document.getElementById("gameBoardContainer").classList.remove("peekaboo")
         requestAnimationFrame(loop);
-
     }
 
     document.getElementById("startGame").onclick = startGame;

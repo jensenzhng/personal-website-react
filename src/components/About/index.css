@@ -1,16 +1,16 @@
 .about {
     transition-duration: 0.5s;
     color: white;
-    padding: 5rem 0 2rem 0;
+    padding: 4rem 3rem 2rem 3rem;
     /* text-align: center; */
     /* margin: 0 5vw 0 5vw; */
-    margin: auto;
-    width: 50%;
+    margin: 0 auto;
+    max-width: 50rem;
 
     /* padding: 10px; */
 }
 
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){
     .about {
         margin: auto;
         width: 80%;
@@ -22,7 +22,7 @@
         margin: auto;
         width: 85%;
     }
-}
+} */
 
 .about h3 {
     padding: 1.5rem 0 1.5rem 0;
