@@ -37,7 +37,6 @@ class FrostedPanel extends React.Component {
         this.getSpotifyStatus();
         this.id = setInterval(() => {
             this.getSpotifyStatus();
-            console.log(this.state);
         }, 5000)
     }
 
