@@ -57,8 +57,8 @@ window.onload = function () {
             if (cell.x === apple.x && cell.y === apple.y) {
 
                 snake.maxCells++;
-                document.getElementById("gameScore").innerText = snake.maxCells - 4;
-                if(document.getElementById("gameScore").innerText > 7) redirect();
+                document.getElementById("gameScore").innerText = snake.maxCells - 4 +'/8';
+                if(document.getElementById("gameScore").innerText.charAt(0) > 7) redirect();
                 apple.x = getRandomInt(0, 25) * grid;
                 apple.y = getRandomInt(0, 25) * grid;
 
@@ -133,7 +133,7 @@ window.onload = function () {
 
     async function redirect () {
 
-        let currentScore = document.getElementById("gameScore").innerText;
+        let currentScore = document.getElementById("gameScore").innerText.charAt(0);
         if(currentScore < 8) {
             alert("hey dont cheat >:(");
             rediirect();

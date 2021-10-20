@@ -14,13 +14,12 @@ let Game = () => {
             <script src="./snake.js"></script>
         </Helmet>
             <div className="bigDiv">
-                <h1 className="startButton" id="startButton">hey! let's play a game.<br />see if you can score 8.</h1>
+                <h1 className="startButton" id="startButton">hey! let's play a quick game.</h1>
                 <button id="startGame">start game</button>
                 <button id="homeButton" onClick={returnHome}>return home</button>
 
                 <div className="gameBoardContainer peekaboo" id="gameBoardContainer">
-
-                    <h1 id="gameScore">0</h1>
+                    <h1 id="gameScore" >0/8</h1>
 
                     <canvas width="400" height="400" id="game" className="gameCanvas"></canvas>
 
