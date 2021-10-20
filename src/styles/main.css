@@ -1,66 +1,34 @@
 * {
-    cursor: url('../images/cursor.png') 10 10, auto;
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    color: white;
+  cursor: url('../images/cursor.png') 10 10, auto;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  color: white;
 }
 
 #body { 
-    background-color: rgb(16, 16, 16);
+  background-color: rgb(16, 16, 16);
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
-    }
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
-    background: #000000;
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.475);
-    }
-    
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-    }
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.475);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
       
-      .npb {
-        padding-bottom: 0px !important; 
-      }
-
-      /*  */
-
-      /* .wrapper {
-    height: 100vh;
-    width: 100vw;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.08);  
-    backdrop-filter: blur(5px);
-    position:absolute;
-    pointer-events: none;
-} */
-
-
-
-/* .contact {
-    animation: fadeIn 0.4s;
-    -webkit-animation: fadeIn 0.4s;
-    -moz-animation: fadeIn 0.4s;
-    -o-animation: fadeIn 0.4s;
-    -ms-animation: fadeIn 0.4s;
-    width: 50%;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, .10);  
-    backdrop-filter: blur(5px);
-    border-radius: 4px;
-    padding: 30px 30px 30px 30px;
-    display: block;
-    box-sizing: border-box;
-    margin: auto;
-    text-align: center;
-  } */
+.npb {
+  padding-bottom: 0px !important; 
+}
