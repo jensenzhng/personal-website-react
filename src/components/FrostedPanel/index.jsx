@@ -19,16 +19,17 @@ class FrostedPanel extends React.Component {
                 spotifyStatus: 'Not listening to anything'
             })
         });
-        let statusJSON = await res.json();
-        console.log(statusJSON);
+        if (res) {
+            let statusJSON = await res.json();
         
-        if (statusJSON.recenttracks.track[0]['@attr'] && statusJSON.recenttracks.track[0]['@attr'].nowplaying) {
-          let status = `Listening to ${statusJSON.recenttracks.track[0].name} by ${statusJSON.recenttracks.track[0].artist['#text']}`;
-          this.setState({spotifyStatus: status})
-        } else {
-            this.setState({
-                spotifyStatus: 'Not listening to anything'
-            })
+            if (statusJSON.recenttracks.track[0]['@attr'] && statusJSON.recenttracks.track[0]['@attr'].nowplaying) {
+            let status = `Listening to ${statusJSON.recenttracks.track[0].name} by ${statusJSON.recenttracks.track[0].artist['#text']}`;
+            this.setState({spotifyStatus: status})
+            } else {
+                this.setState({
+                    spotifyStatus: 'Not listening to anything'
+                })
+            }
         }
       }
 
