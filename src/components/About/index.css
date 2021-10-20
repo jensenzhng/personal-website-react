@@ -2,33 +2,14 @@
     transition-duration: 0.5s;
     color: white;
     padding: 4rem 3rem 2rem 3rem;
-    /* text-align: center; */
-    /* margin: 0 5vw 0 5vw; */
     margin: 0 auto;
-    max-width: 50rem;
-
-    /* padding: 10px; */
+    max-width: 55rem;
 }
-
-/* @media only screen and (max-width: 1200px){
-    .about {
-        margin: auto;
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 693px){
-    .about {
-        margin: auto;
-        width: 85%;
-    }
-} */
 
 .about h3 {
     padding: 1.5rem 0 1.5rem 0;
     font-weight: 400;
 }
-
 
 .about h1, h2 {
     background: #0563F1;
