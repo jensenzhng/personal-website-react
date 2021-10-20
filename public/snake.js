@@ -96,7 +96,7 @@ window.onload = function () {
         startX = touch.pageX
         startY = touch.pageY
         startTime = new Date().getTime()
-        e.preventDefault()
+        e.preventDefault()  
     }, false)
     
     document.addEventListener('touchmove', function(e){
@@ -185,6 +185,6 @@ window.onload = function () {
 
     document.getElementById("startGame").onclick = startGame;
 
-    document.getElementById("startButton").addEventListener('touchstart', startGame)
+    document.getElementById("startGame").addEventListener('touchstart', startGame)
 
 };
