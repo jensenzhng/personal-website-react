@@ -1,43 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './index.css'
-
+import { Helmet } from 'react-helmet';
 
 function returnHome () {
     window.location.href = '/';
 }
 
-function hi () {
-    document.getElementById("startButton").classList.add("peekaboo")
-        document.getElementById("home").classList.add("peekaboo")
-        document.getElementById("startGame").classList.add("peekaboo")
-        document.getElementById("gameBoardContainer").classList.remove("peekaboo")
-}
+
 
 let Game = () => {
-    const [playedGame, setPlayedGame] = useState(window.localStorage.getItem('playedGame'));
+    return (
+        <><Helmet>
+            <script src="./snake.js"></script>
+        </Helmet>
+            <div className="bigDiv">
+                <h1 className="startButton" id="startButton">hey! let's play a game.<br />see if you can score 8.</h1>
+                <button id="startGame">start game</button>
+                <button id="homeButton" onClick={returnHome}>return home</button>
 
-    useEffect(() => {
-        let canvas = document.getElementById('game');
-        let context = canvas.getContext('2d');
+                <div className="gameBoardContainer peekaboo" id="gameBoardContainer">
 
+                    <h1 id="gameScore">0</h1>
 
-        // document.getElementById("startButton").onclick = document.getElementById("startButton").innerHTML = 'hi';
-    }, [])
-    
+                    <canvas width="400" height="400" id="game" className="gameCanvas"></canvas>
 
-    return (<div className="bigDiv">
-            <h1 className="startButton" id="startButton">hey! let's play a game.<br/>click me and see if you can score 8.</h1>
-            <button id="startGame" onClick={hi}>start game</button>
-            <button id="home" onClick={returnHome}>return home</button>
-
-            <div className="gameBoardContainer peekaboo" id="gameBoardContainer">
-
-                <h1 id="gameScore">0</h1>
-
-                <canvas width="400" height="400" id="game" className="gameCanvas"></canvas>
-
-            </div>
-        </div>)
+                </div>
+            </div></>)
 }
 
 export default Game;

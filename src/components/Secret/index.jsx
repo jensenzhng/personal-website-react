@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import './index.css'
 import ilookdumb from '../../images/ilookdumb.jpeg'
 
