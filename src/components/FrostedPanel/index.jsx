@@ -34,14 +34,21 @@ class FrostedPanel extends React.Component {
       }
 
     componentDidMount() {
+        let x = 0;
+        // const titleText = ['Jensen', 'ensen ', 'nsen Z', 'sen Zh', 'en Zha', 'n Zhan', 'Zhang ', 'hang J', 'ang Je', 'ng Jen', 'g Jens', 'Jense']
+        const titleText = ['Jensen Zhang|','Jensen Zhang', 'Jensen Zhang|', 'Jensen Zhan|', 'Jensen Zha|', 'Jensen Zh|', 'Jensen Z|', 'Jensen |', 'Jensen|', 'Jense|', 'Jens|', 'Jen|', 'Je|', 'J|', '|', '&#65279;', '|', '&#65279;', '|', 'J|', 'Je|', 'Jen|', 'Jens|', 'Jense|', 'Jensen|', 'Jensen |', 'Jensen Z|', 'Jensen Zh|', 'Jensen Zha|', 'Jensen Zhan|', 'Jensen Zhang|', 'Jensen Zhang']
         this.getSpotifyStatus();
         this.id = setInterval(() => {
             this.getSpotifyStatus();
-        }, 5000)
+        }, 5000);
+        this.titleLoopId = setInterval(() => {
+            document.getElementsByTagName("title")[0].innerHTML = titleText[x++%titleText.length];
+        }, 400)
     }
 
     componentWillUnmount() {
         clearInterval(this.id);
+        clearInterval(this.titleLoopId);
       }
 
     render() {
