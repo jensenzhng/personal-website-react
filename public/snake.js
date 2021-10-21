@@ -78,7 +78,7 @@ window.onload = function () {
                 apple.x = getRandomInt(0, 25) * grid;
                 apple.y = getRandomInt(0, 25) * grid;
 
-                document.getElementById("gameScore").innerText = 0;
+                document.getElementById("gameScore").innerText = 0/8;
 
             };
         };
