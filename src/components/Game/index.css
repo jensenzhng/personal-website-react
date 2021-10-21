@@ -9,6 +9,7 @@ button  {
     margin: 4px 2px;
     transition-duration: 0.4s;
     color: white;
+    cursor: pointer;
 }
   
 button:hover {
@@ -23,7 +24,6 @@ button:hover {
     font-size: 30px;
     font-family: Roboto;
     color: rgb(170, 0, 255);
-
 }
 
 .bigDiv {

@@ -1,10 +1,18 @@
 .about {
     transition-duration: 0.5s;
     color: white;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 2.1rem 2rem 2.1rem;
     margin: 0 auto;
-    max-width: 55rem;
+    max-width: 52rem;
+    transition-duration: 0.5s;
 }
+
+
+@media only screen and (max-width: 1300px){
+    .about {
+        max-width: 62rem;
+    }
+} 
 
 .about h3 {
     padding: 1.5rem 0 1.5rem 0;
