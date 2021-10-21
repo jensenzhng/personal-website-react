@@ -183,6 +183,6 @@ window.onload = function () {
 
     document.getElementById("startGame").onclick = startGame;
 
-    document.getElementById("startGame").addEventListener('touchstart', startGame)
+    document.getElementById("startGame").ontouchstart = startGame;
 
 };

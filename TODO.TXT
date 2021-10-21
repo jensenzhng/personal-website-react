@@ -1,2 +1,2 @@
-add projects
-test
+make game work on mobile 
+possible message me form
