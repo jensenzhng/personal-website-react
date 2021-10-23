@@ -37,6 +37,7 @@
     -o-animation: fadeIn 0.4s;
     -ms-animation: fadeIn 0.4s;
     width: 380px;
+    height: 380px;
     z-index: 100;
     background-color: rgba(255, 255, 255, .10);  
     backdrop-filter: blur(5px);
@@ -45,16 +46,15 @@
     padding: 30px 30px 30px 30px;
     display: block;
     box-sizing: border-box;
-    top: 50%;
-    left: 50%; 
-    margin: -185px 0 0 -190px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
     text-align: center;
   }
   
   @media only screen and (max-width: 693px){
     .wrapper {
         width: 300px;
-        margin: -210px 0 0 -150px;
+        height: 410px;
     }
   }
   
@@ -62,7 +62,7 @@
   @media only screen and (max-height: 500px){
     .wrapper {
       width: 800px;
-      margin: -145px 0 0 -400px;
+      height: 300px;
     }
   }
 
