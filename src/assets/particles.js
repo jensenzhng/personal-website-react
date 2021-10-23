@@ -10,6 +10,15 @@ const getRandomHoverMode = () => {
   if (random === 1) return "repulse"
 }
 
+const getRandomShape = () => {
+  let random = randomIntFromInterval(0,4);
+  if (random === 0) return "circle"
+  if (random === 1) return "edge"
+  if (random === 2) return "triangle"
+  if (random === 3) return "polygon"
+  if (random === 4) return "star"
+}
+
 const getRandomDirection = () => {
   let random = randomIntFromInterval(0,5);
   if (random === 0 || random === 1) return "none";
@@ -34,7 +43,7 @@ const config = {
         "value": color
       },
       "shape": {
-        "type": "circle",
+        "type": getRandomShape(),
         "stroke": {
           "width": 0,
           "color": color
