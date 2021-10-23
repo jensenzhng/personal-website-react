@@ -1,20 +1,43 @@
+const randomIntFromInterval = (min, max) => { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+
+const getRandomHoverMode = () => {
+  let random = randomIntFromInterval(0,1);
+  if (random === 0) return "grab"
+  if (random === 1) return "repulse"
+}
+
+const getRandomDirection = () => {
+  let random = randomIntFromInterval(0,5);
+  if (random === 0 || random === 1) return "none";
+  if (random === 2) return "top-right"
+  if (random === 3) return "top-left"
+  if (random === 4) return "bottom-right"
+  if (random === 5) return "bottom-left"
+}
+
+const color = genRanHex(6);
+
 const config = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": randomIntFromInterval(80,90),
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": color
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": color
         },
         "polygon": {
           "nb_sides": 5
@@ -26,12 +49,12 @@ const config = {
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.7,
         "random": false,
         "anim": {
-          "enable": false,
+          "enable": Math.random() < 0.5,
           "speed": 1,
-          "opacity_min": 0.1,
+          "opacity_min": 0.4,
           "sync": false
         }
       },
@@ -39,29 +62,29 @@ const config = {
         "value": 3,
         "random": true,
         "anim": {
-          "enable": false,
-          "speed": 40,
+          "enable": true,
+          "speed": 1,
           "size_min": 0.1,
           "sync": false
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": Math.random() < 0.5,
         "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.5,
+        "color": color,
+        "opacity": 0.6,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
+        "speed": randomIntFromInterval(4,7),
+        "direction": getRandomDirection(),
+        "random": Math.random() < 0.5,
         "straight": false,
         "out_mode": "out",
-        "bounce": false,
+        "bounce": Math.random() < 0.5,
         "attract": {
-          "enable": false,
+          "enable": Math.random() < 0.5,
           "rotateX": 600,
           "rotateY": 1200
         }
@@ -72,10 +95,10 @@ const config = {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": getRandomHoverMode()
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true

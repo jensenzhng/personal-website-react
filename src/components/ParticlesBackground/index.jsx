@@ -6,9 +6,7 @@ import './index.css'
 class ParticlesBackground extends React.Component {
     render() {
         return(
-            // <div id="particles-js">
                 <Particles className="particles-js"  params={particlesConfig} />
-            // </div>
         )
     }
 }
