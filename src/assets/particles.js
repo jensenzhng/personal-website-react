@@ -2,7 +2,19 @@ const randomIntFromInterval = (min, max) => { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+const genRanHex = () => {
+  let h = 360 * Math.random(), s = 50 + 50 * Math.random(), l = 80 + 10 * Math.random();
+  l /= 100;
+  const a = s * Math.min(l, 1 - l) / 100;
+  const f = n => {
+    const k = (n + h / 30) % 12;
+    const color = l - a * Math.max(Math.min(k - 3, 9 - k, 1), -1);
+    return Math.round(255 * color).toString(16).padStart(2, '0');   // convert to Hex and prefix "0" if needed
+  };
+  return `#${f(0)}${f(8)}${f(4)}`;
+}
+
+// const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 
 const getRandomHoverMode = () => {
   let random = randomIntFromInterval(0,1);
@@ -28,7 +40,7 @@ const getRandomDirection = () => {
   if (random === 5) return "bottom-left"
 }
 
-const color = genRanHex(6);
+const color = genRanHex();
 
 const config = {
     "particles": {
@@ -86,7 +98,7 @@ const config = {
       },
       "move": {
         "enable": true,
-        "speed": randomIntFromInterval(4,7),
+        "speed": randomIntFromInterval(5,7),
         "direction": getRandomDirection(),
         "random": Math.random() < 0.5,
         "straight": false,
