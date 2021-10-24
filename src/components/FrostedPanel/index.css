@@ -59,7 +59,7 @@
   
   @media only screen and (max-height: 500px){
     .wrapper {
-      min-width: 350px;
+      min-width: 500px;
     }
   }
 
