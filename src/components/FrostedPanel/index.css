@@ -36,33 +36,30 @@
     -moz-animation: fadeIn 0.4s;
     -o-animation: fadeIn 0.4s;
     -ms-animation: fadeIn 0.4s;
-    width: 380px;
-    height: 380px;
-    z-index: 100;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, .10);  
     backdrop-filter: blur(5px);
+    padding: 30px 40px;
     border-radius: 4px;
-    position:absolute;
-    padding: 30px 30px 30px 30px;
-    display: block;
-    box-sizing: border-box;
-    margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
-    text-align: center;
+    min-width: 300px;
+    max-width: 340px;
+    min-height: 100px;
   }
   
   @media only screen and (max-width: 693px){
     .wrapper {
-        width: 300px;
-        height: 410px;
+        min-width: 230px;
     }
   }
   
   
   @media only screen and (max-height: 500px){
     .wrapper {
-      width: 800px;
-      height: 300px;
+      min-width: 350px;
     }
   }
 
@@ -75,6 +72,7 @@
   
   .socials {
     margin-top: 15px;
+    margin-bottom: 8px;
     transition-duration: 0.5s;
     pointer-events:all;
   }
