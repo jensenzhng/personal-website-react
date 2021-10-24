@@ -32,12 +32,11 @@ const getRandomShape = () => {
 }
 
 const getRandomDirection = () => {
-  let random = randomIntFromInterval(0,5);
-  if (random === 0 || random === 1) return "none";
-  if (random === 2) return "top-right"
-  if (random === 3) return "top-left"
-  if (random === 4) return "bottom-right"
-  if (random === 5) return "bottom-left"
+  let random = randomIntFromInterval(0,3);
+  if (random === 0) return "top-right"
+  if (random === 1) return "top-left"
+  if (random === 2) return "bottom-right"
+  if (random === 3) return "bottom-left"
 }
 
 const color = genRanHex();
@@ -45,7 +44,7 @@ const color = genRanHex();
 const config = {
     "particles": {
       "number": {
-        "value": randomIntFromInterval(80,90),
+        "value": randomIntFromInterval(80,85),
         "density": {
           "enable": true,
           "value_area": 800
