@@ -13,15 +13,17 @@ class Notification extends React.Component {
 
     componentDidMount() {
         if (!this.state.visitedBefore) {
-            toast.dark('Try refreshing the page for a new background! 😃', {
-                position: "top-right",
-                autoClose: 8000,
-                hideProgressBar: false,
-                pauseOnHover: false,
-                closeOnClick: true,
-                draggable: true,
-                progress: undefined,
+           setTimeout(() => {
+                toast.dark('Try refreshing the page for a new background! 😃', {
+                    position: "top-right",
+                    autoClose: 8000,
+                    hideProgressBar: false,
+                    pauseOnHover: false,
+                    closeOnClick: true,
+                    draggable: true,
+                    progress: undefined,
                 });
+           },1000);
             localStorage.setItem('visitedBefore', true)
         }
     }
