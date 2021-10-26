@@ -115,7 +115,7 @@ const config = {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": getRandomHoverMode()
+          "mode": "repulse"
         },
         "onclick": {
           "enable": false,
