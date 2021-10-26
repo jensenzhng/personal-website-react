@@ -16,11 +16,11 @@ const genRanHex = () => {
 
 // const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 
-const getRandomHoverMode = () => {
-  let random = randomIntFromInterval(0,1);
-  if (random === 0) return "grab"
-  if (random === 1) return "repulse"
-}
+// const getRandomHoverMode = () => {
+//   let random = randomIntFromInterval(0,1);
+//   if (random === 0) return "grab"
+//   if (random === 1) return "repulse"
+// }
 
 const getRandomShape = () => {
   let random = randomIntFromInterval(0,4);
