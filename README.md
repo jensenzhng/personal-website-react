@@ -2,7 +2,7 @@
 
 <img src="./demo.png"/>
 
-This project is a port of my pure HTML/JS/CSS site to ReactJS. I wrote most of the code in about the span of 2 days while learning React, so the code may not be following every single React convention :P 
+This project is a port of my pure HTML/JS/CSS site to ReactJS. I wrote this while learning React, so the code may not be following every single React convention - I'm still learning React so I'll make sure to update my code accordingly :P 
 
 ## Tech Stack
 - [create-react-app](https://create-react-app.dev/)/[React](https://reactjs.org/)
