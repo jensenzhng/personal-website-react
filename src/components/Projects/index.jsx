@@ -19,8 +19,8 @@ class Projects extends React.Component {
                 <ProjectCard {...orbitalVisualizer}></ProjectCard>
                 <ProjectCard {...offerIDBot}></ProjectCard>
                 <ProjectCard {...bbMonitorScript}></ProjectCard>
-                <ProjectCard {...idyll}></ProjectCard>
                 <ProjectCard {...discordSniper}></ProjectCard>
+                <ProjectCard {...idyll}></ProjectCard>
             </div>
         )
     }
