@@ -23,5 +23,5 @@ This site's always a work in progress, I'm always looking to add cool stuff to i
 - [ ] Possible TypeScript rewrite 
 
 ## Special thanks ❤️
-    - [Particles.js library](https://github.com/VincentGarreau/particles.js/)
+- [Particles.js library](https://github.com/VincentGarreau/particles.js/)
 
