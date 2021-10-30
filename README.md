@@ -9,12 +9,12 @@ This project is a port of my pure HTML/JS/CSS site to ReactJS. I wrote this in a
 - CSS3
 
 ## Want to run the site locally?
-    - Clone this repository to your device
-        `git clone https://github.com/jensenzhng/personal-website-react.git`
-    - Install dependencies in root folder
-        `npm i`
-    - Run project
-        `npm run start`
+- Clone this repository to your device
+    `git clone https://github.com/jensenzhng/personal-website-react.git`
+- Install dependencies in root folder
+    `npm i`
+- Run project
+    `npm run start`
 
 ## Future
 This site's always a work in progress, I'm always looking to add cool stuff to it :)
