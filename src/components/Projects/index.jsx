@@ -6,6 +6,7 @@ const twitterMonitor = { "title": "Twitter Monitor", "tech": "Backend NodeJS + D
 const orbitalVisualizer = { "title": "Orbital Visualizer", "tech": "Frontend HTML, CSS and JS + Backend Firebase, JS", "description": "Built for the NASA SpaceApps Hackathon. Over 20,000 objects orbiting Earth are displayed along with information about the body and the ability to filter by debris, rocket bodies, and payloads.", "githubLink": "https://github.com/jensenzhng/cesium-visualizer", link: 'https://orbitalvisualizer.earth/'};
 const offerIDBot = { "title": "Walmart Offer ID Bot", "tech": "Backend NodeJS + Discord API", "description": "Scrapes the Offer ID and information of a Walmart product given the SKU, or the SKU from an Offer ID. Useful when running Walmart bots that have Offer ID mode.", "githubLink": "https://github.com/jensenzhng/offer-id-bot"};
 const bbMonitorScript = { "title": "Best Buy Monitor Script", "tech": "Backend NodeJS", "description": "Scrapes the availability of a product on Best Buy.", "githubLink": "https://github.com/jensenzhng/best-buy-monitor"};
+const discordSniper = { "title": "Discord Sniper", "tech": "NodeJS + Discord API", "description": "A script that, given a Discord token, can instantly join servers and claim Nitros. Can be used to join exclusive invite-only Discord servers and to get free months of Nitro.", "githubLink": "https://github.com/jensenzhng/discord-toolbox"}
 const idyll = { "title": "Idyll (In-Progress)", "tech": "Frontend HTML, CSS and JS + Backend Firebase, NodeJS", "description": "Check back soon...", "link": "https://idyll.shop/"};
 //{ "title": "", "tech": "", "description": "", "githubLink": ""};
 
@@ -19,6 +20,7 @@ class Projects extends React.Component {
                 <ProjectCard {...offerIDBot}></ProjectCard>
                 <ProjectCard {...bbMonitorScript}></ProjectCard>
                 <ProjectCard {...idyll}></ProjectCard>
+                <ProjectCard {...discordSniper}></ProjectCard>
             </div>
         )
     }
