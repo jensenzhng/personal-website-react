@@ -76,7 +76,6 @@
     transition-duration: 0.5s;
     pointer-events:all;
   }
-
   
   .socials a {
     transition-duration: 0.5s;
@@ -218,4 +217,14 @@
   @-ms-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
+  }
+
+  .spotify-svg {
+    transition-duration: 0.5s;
+    opacity: 0.5;
+    pointer-events: all;
+  }
+
+  .spotify-svg:hover {
+    opacity: 1;
   }
