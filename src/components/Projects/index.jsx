@@ -8,6 +8,7 @@ const offerIDBot = { "title": "Walmart Offer ID Bot", "tech": "Backend NodeJS + 
 const bbMonitorScript = { "title": "Best Buy Monitor Script", "tech": "Backend NodeJS", "description": "Scrapes the availability of a product on Best Buy.", "githubLink": "https://github.com/jensenzhng/best-buy-monitor"};
 const discordSniper = { "title": "Discord Sniper", "tech": "NodeJS + Discord API", "description": "A script that, given a Discord token, can instantly join servers and claim Nitros. Can be used to join exclusive invite-only Discord servers and to get free months of Nitro.", "githubLink": "https://github.com/jensenzhng/discord-toolbox"}
 const idyll = { "title": "Idyll (In-Progress)", "tech": "Frontend HTML, CSS and JS + Backend Firebase, NodeJS", "description": "Check back soon...", "link": "https://idyll.shop/"};
+const stockBot = { "title": "Stock Bot", "tech": "Backend NodeJS + Discord API", "description": "My friend commissioned me to write a Discord bot that allows him to inform other people of his opinion on the stock market. Currently, the bot is in over 23 Discord servers and reaches about 2 thousand people.", "githubLink": "https://github.com/jensenzhng/stock-bot-public"}
 //{ "title": "", "tech": "", "description": "", "githubLink": ""};
 
 class Projects extends React.Component {
@@ -21,6 +22,7 @@ class Projects extends React.Component {
                 <ProjectCard {...bbMonitorScript}></ProjectCard>
                 <ProjectCard {...discordSniper}></ProjectCard>
                 <ProjectCard {...idyll}></ProjectCard>
+                <ProjectCard {...stockBot}></ProjectCard>
             </div>
         )
     }

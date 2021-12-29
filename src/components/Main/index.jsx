@@ -10,7 +10,7 @@ class Main extends React.Component {
     render() {
         return (
             <div className="aJK9fhel">
-                <FrostedPanel/>
+                <FrostedPanel />
                 <Notification />
                 <ParticlesBackground />
                 <About />
