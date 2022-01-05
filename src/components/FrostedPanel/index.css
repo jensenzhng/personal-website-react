@@ -63,15 +63,24 @@
     }
   }
 
+  .about-link {
+    float: right;
+    padding-top: 3px;
+  }
+
+  .about-link a {
+    opacity: 1 !important
+  }
   
   code {
     font-family: monospace;
     color:rgb(255, 83, 112);
     font-size: 125%;
+    opacity: 1 !important
   }
   
   .socials {
-    margin-top: 15px;
+    margin-top: 18px;
     margin-bottom: 8px;
     transition-duration: 0.5s;
     pointer-events:all;
