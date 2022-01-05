@@ -4,12 +4,14 @@
     color: white;
     padding: 2rem 2.1rem 2rem 2.1rem;
     margin: 0 auto;
-    max-width: 52rem;
+    max-width: 69rem;
     transition-duration: 0.5s;
 }
 
 .back {
-    padding: 4rem 0rem 0rem 14rem;
+    transition-duration: 0.5s;
+    max-width: 80rem;
+    padding: 4rem 0rem 0rem 2.1rem;
     margin: 0 auto;
 }
 

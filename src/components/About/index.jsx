@@ -16,7 +16,7 @@ class About extends React.Component {
                 <h1>Technology Stack</h1>
                 <h3>I started off learning <code>Java</code>, but right now, I am most comfortable with <code>JavaScript</code> or <code>NodeJS</code>. I know the following languages: <code>HTML</code>, <code>CSS</code>, <code>JS/NodeJS</code>, <code>Java</code>, <code>Python</code>, and a little bit of <code>Golang</code>. Right now, I am trying to strengthen my frontend skills by learning frameworks such as <code>React.js</code> (update - I ported this whole website to React!), <code>Next.js</code>, and <code>Vue.js</code>. I am also extremely interested in machine learning and artificial intelligence.</h3>
                 <h1>What have I made?</h1>
-                <h3 className="npb" >Check out some of my projects below ↓</h3>
+                <h3 className="p3" >Check out some of my projects below ↓</h3>
                 <Projects/>
             </div>
             </>
