@@ -69,6 +69,10 @@
   }
 
   .about-link a {
+    opacity: .8 !important
+  }
+
+  .about-link a:hover {
     opacity: 1 !important
   }
   
