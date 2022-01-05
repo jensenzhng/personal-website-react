@@ -16,15 +16,15 @@
 }
 
 
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1000px){
     .about {
         max-width: 62rem;
         padding-top: 2rem;
     }
-    .back {
+    /* .back {
         max-width: 64rem;
         padding: 4rem 0rem 0rem 2.1rem;
-    }
+    } */
 } 
 
 .about h3 {
