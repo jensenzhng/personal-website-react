@@ -9,6 +9,7 @@ class AboutPage extends React.Component {
             <div className="about-page">
                 <About />
                 <Footer />
+
             </div>
         )
     }

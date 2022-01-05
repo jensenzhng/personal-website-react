@@ -13,19 +13,23 @@
     max-width: 80rem;
     padding: 4rem 0rem 0rem 2.1rem;
     margin: 0 auto;
+    opacity:0.75;
 }
 
+.back:hover {
+    opacity:1;
+}
 
 @media only screen and (max-width: 1000px){
     .about {
         max-width: 62rem;
         padding-top: 2rem;
     }
-    /* .back {
-        max-width: 64rem;
-        padding: 4rem 0rem 0rem 2.1rem;
-    } */
 } 
+
+.icons {
+    display: flex;
+}
 
 .about h3 {
     padding: 1.5rem 0 1.5rem 0;
