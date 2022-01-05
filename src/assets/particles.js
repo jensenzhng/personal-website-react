@@ -54,7 +54,7 @@ const config = {
         "value": color
       },
       "shape": {
-        "type": getRandomShape(),
+        "type": "circle",
         "stroke": {
           "width": 0,
           "color": color
@@ -89,7 +89,7 @@ const config = {
         }
       },
       "line_linked": {
-        "enable": Math.random() < 0.5,
+        "enable": false,
         "distance": 150,
         "color": color,
         "opacity": 0.6,
@@ -97,14 +97,14 @@ const config = {
       },
       "move": {
         "enable": true,
-        "speed": randomIntFromInterval(5,7),
+        "speed": randomIntFromInterval(5,6),
         "direction": getRandomDirection(),
-        "random": Math.random() < 0.5,
+        "random": false,
         "straight": false,
         "out_mode": "out",
-        "bounce": Math.random() < 0.5,
+        "bounce": false,
         "attract": {
-          "enable": Math.random() < 0.5,
+          "enable": false,
           "rotateX": 600,
           "rotateY": 1200
         }
