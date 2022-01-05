@@ -1,16 +1,26 @@
 .about {
     transition-duration: 0.5s;
     color: white;
-    padding: 4rem 2.1rem 2rem 2.1rem;
+    padding: 2rem 2.1rem 2rem 2.1rem;
     margin: 0 auto;
     max-width: 52rem;
     transition-duration: 0.5s;
+}
+
+.back {
+    padding: 4rem 0rem 0rem 10rem;
+    margin: 0 auto;
 }
 
 
 @media only screen and (max-width: 1300px){
     .about {
         max-width: 62rem;
+        padding-top: 2rem;
+    }
+    .back {
+        max-width: 64rem;
+        padding: 4rem 0rem 0rem 2.1rem;
     }
 } 
 
