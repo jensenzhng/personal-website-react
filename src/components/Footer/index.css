@@ -21,6 +21,10 @@ footer h1, h4 {
   opacity: 0.3;
 }
 
+.ns {
+  background: none !important;
+}
+
 footer h4 {
   padding-bottom: 0.6rem;
 }

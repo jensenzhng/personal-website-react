@@ -15,7 +15,9 @@ class Footer extends React.Component {
             <footer>
                 <div className="bar"></div>
                 <div className="footer-container">
-                    <h1>Jensen Zhang</h1>
+                    <div className="ns">
+                        <h1>Jensen Zhang</h1>
+                    </div>
                     <h4> Made with ❤️ • {new Date().getFullYear()} </h4>
                     {
                         (this.state.playedGame === null)
