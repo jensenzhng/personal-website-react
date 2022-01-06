@@ -22,7 +22,7 @@ class About extends React.Component {
                     <Tech></Tech>
                 </div>
                 <h2>What have I made?</h2>
-                <h3 className="p3" > Here are some highlights of the projects I have made; I have tons of smaller ones not listed here, but enjoy these </h3>
+                <h3 className="p3" > Enjoy the highlights of some of the projects I have made 😊</h3>
                 <Projects/>
             </div>
             </>
