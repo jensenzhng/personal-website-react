@@ -1,0 +1,8 @@
+.spotify-status {
+    overflow: hidden;
+}
+
+.spotify-status p {
+    display: inline-flex;
+    align-items: center;
+}

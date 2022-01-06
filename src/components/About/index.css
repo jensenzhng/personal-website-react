@@ -26,11 +26,14 @@
 }
 
 .back {
+    line-height: 1.7;
     transition-duration: 0.5s;
     max-width: 70rem;
-    padding: 4rem 0rem 0rem 2.1rem;
+    padding: 4rem 2.1rem 0rem 2.1rem;
     margin: 0 auto;
     opacity:0.75;
+    display: flex;
+    justify-content: space-between;
 }
 
 .back:hover {
@@ -53,6 +56,9 @@
 @media only screen and (max-width:640px) {
     .aurora h1{
         font-size: 2.7rem;
+    }
+    .spotify-status {
+        /* display: none !important; */
     }
 }
 

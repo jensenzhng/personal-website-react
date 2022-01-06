@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css'
 import Projects from '../Projects';
 import Tech from '../Tech';
-
+import Spotify from '../Spotify';
 
 class About extends React.Component {
     render() {
@@ -10,6 +10,7 @@ class About extends React.Component {
             <>
             <div className="back">
                 <a href="/"> <code> &lt; back to homepage</code> </a>
+                <Spotify></Spotify>
             </div>
             <div className="about">
                 <div className="aurora">
