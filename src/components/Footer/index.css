@@ -16,6 +16,7 @@ footer {
 .footer-container {
   padding-left: 1rem;
   display: inline-block;
+  padding-bottom: 5rem;
 }
 
 footer h1, h4 {
@@ -31,7 +32,6 @@ footer a {
   text-decoration: none;
   color: rgba(173, 181, 189, 0.356);
   transition-duration: 0.2s;
-  padding-bottom: 5rem;
 }
 
 footer a:hover {
