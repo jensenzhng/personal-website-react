@@ -14,7 +14,7 @@ class Spotify extends React.Component {
 
     render() { 
         return ( 
-            <div className="spotify-status" id="spotify-status">
+            <div className="spotify-status res" id="spotify-status">
                 <p>
                     <span style={{paddingRight: '5px'}}> {this.context.spotifyStatus} </span>
                     <span>
