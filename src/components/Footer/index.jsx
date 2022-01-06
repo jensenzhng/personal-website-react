@@ -13,11 +13,16 @@ class Footer extends React.Component {
     render() {
         return (
             <footer>
-                {
-                    (this.state.playedGame === null)
-                    ? <a id="secret" href="/game"> hmmm, i wonder what this is... </a>
-                    : <a id="secret" href="/secret"> what, a secret link? </a>
-                }
+                <div className="bar"></div>
+                <div className="footer-container">
+                    <h1>Jensen Zhang</h1>
+                    <h4> Made with ❤️ • {new Date().getFullYear()} </h4>
+                    {
+                        (this.state.playedGame === null)
+                        ? <a id="secret" href="/game"> what is this? </a>
+                        : <a id="secret" href="/secret"> a secret link? </a>
+                    }
+                </div>
             </footer>
         )
     }
