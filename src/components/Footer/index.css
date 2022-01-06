@@ -8,8 +8,9 @@ footer {
 .bar {
   margin-top: 1.5rem !important;
   margin-bottom: 1.5rem !important;
-  height: 2px;
+  height: 3px;
   background-color: rgba(173, 181, 189, 0.105);
+  border-radius: 2px;
 }
 
 .footer-container {
@@ -21,9 +22,6 @@ footer h1, h4 {
   opacity: 0.3;
 }
 
-.ns {
-  background: none !important;
-}
 
 footer h4 {
   padding-bottom: 0.6rem;
