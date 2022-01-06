@@ -65,11 +65,11 @@
 
   .about-link {
     float: right;
-    padding-top: 3px;
+    padding-top: 7px;
   }
 
   .about-link a {
-    opacity: .7 !important
+    opacity: .75 !important
   }
 
   .about-link a:hover {
