@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.css'
+import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
     constructor(props) {
@@ -9,6 +10,9 @@ class Footer extends React.Component {
         }
     }
 
+    componentDidMount() {
+        window.scrollTo(0, 0)
+      }
 
     render() {
         return (
@@ -22,7 +26,7 @@ class Footer extends React.Component {
                     {
                         (this.state.playedGame === null)
                         ? <a id="secret" href="/game"> what is this? </a>
-                        : <a id="secret" href="/secret"> a secret link? </a>
+                        : <Link to="/secret"> a secret link? </Link>
                     }
                 </div>
             </footer>

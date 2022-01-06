@@ -3,13 +3,14 @@ import './index.css'
 import Projects from '../Projects';
 import Tech from '../Tech';
 import Spotify from '../Spotify';
+import { Link } from 'react-router-dom';
 
 class About extends React.Component {
     render() {
         return (
             <>
             <div className="back">
-                <a href="/"> <code> &lt; back to homepage</code> </a>
+                <Link to="/"> <code> &lt; back to homepage</code> </Link>
                 <Spotify></Spotify>
             </div>
             <div className="about">

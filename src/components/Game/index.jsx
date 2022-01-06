@@ -1,12 +1,11 @@
 import React from 'react';
 import './index.css'
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 function returnHome () {
-    window.location.href = '/';
+    window.location.href = '/about';
 }
-
-
 
 let Game = () => {
     return (
@@ -16,7 +15,8 @@ let Game = () => {
             <div className="bigDiv">
                 <h1 className="startButton" id="startButton">hey! let's play a quick game.</h1>
                 <button id="startGame">start game</button>
-                <button id="homeButton" onClick={returnHome}>return home</button>
+                <Link to="/about"></Link>
+                <button id="homeButton" onClick={returnHome}>go back</button>
 
                 <div className="gameBoardContainer peekaboo" id="gameBoardContainer">
                     <h1 id="gameScore" >0/8</h1>

@@ -3,7 +3,9 @@ import React from 'react';
 import './index.css'
 import ilookdumb from '../../images/ilookdumb.jpeg'
 import Footer from '../Footer/'
+import { Link } from 'react-router-dom';
 import { withRouter } from "react-router-dom";
+import Spotify from '../Spotify';
 
 class Secret extends React.Component {
     constructor(props) {
@@ -32,7 +34,8 @@ class Secret extends React.Component {
             <>
                 <div className="back">
                     { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                    <a href="#" onClick={this.goBack}> <code> &lt; back to homepage</code> </a>
+                    <Link to="/about"> <code> &lt; back to about</code> </Link>
+                    <Spotify></Spotify>
                 </div>
                 <div className="secret">
                     <h1>hey... you found my not-so-secret secret page...</h1>
