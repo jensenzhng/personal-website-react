@@ -57,6 +57,9 @@
     .aurora h1{
         font-size: 2.7rem;
     }
+    .spotify-status {
+        display: none !important; 
+    }
 }
 
 .about h3 {
