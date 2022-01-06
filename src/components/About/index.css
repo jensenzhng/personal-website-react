@@ -1,5 +1,5 @@
 .aurora h1 {
-    font-size: 3.2rem;
+    font-size: 3.3rem;
     color: transparent;
     background-image: -webkit-linear-gradient(100deg, #2ecc71, #3498db, #9b59b6, #f39c12);
     background-image: -moz-linear-linear-gradient(100deg, #2ecc71, #3498db, #9b59b6, #f39c12);
@@ -43,6 +43,18 @@
         padding-top: 2rem;
     }
 } 
+
+@media only screen and (max-width:768px) {
+    .aurora h1{
+        font-size: 2.9rem;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .aurora h1{
+        font-size: 2.7rem;
+    }
+}
 
 .about h3 {
     padding: 0.5rem 0 2.5rem 0;
