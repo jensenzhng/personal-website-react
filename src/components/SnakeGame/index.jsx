@@ -400,4 +400,4 @@ class SnakeGame extends React.Component {
     }
   }
   
-  export default SnakeGame
+  export default SnakeGame;

@@ -46,3 +46,9 @@
 .npb {
   padding-bottom: 0px !important; 
 }
+
+noscript {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
