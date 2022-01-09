@@ -18,9 +18,10 @@ This project is a port of my pure HTML/JS/CSS site to ReactJS. I wrote this whil
 
 ## Future
 This site's always a work in progress, I'm always looking to add cool stuff to it :)
-- [ ] Rework tech stack part of page
+- [x] Rework tech stack part of page
 - [ ] Contact me part of page
-- [ ] Possible TypeScript rewrite 
+- [ ] Add more projects to portfolio
+- [ ] Spotify section with my favorite songs :)
 
 ## Special thanks ❤️
 - [Particles.js library](https://github.com/VincentGarreau/particles.js/)
