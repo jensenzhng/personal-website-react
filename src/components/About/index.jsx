@@ -11,7 +11,7 @@ class About extends React.Component {
             <>
             <div className="back">
                 <Link to="/"> <code> &lt; back to homepage</code> </Link>
-                <Spotify></Spotify>
+                <Spotify {...{side: 'right', hide: 'true'}}></Spotify>
             </div>
             <div className="about">
                 <div className="aurora">

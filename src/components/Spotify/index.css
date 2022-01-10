@@ -3,6 +3,8 @@
 }
 
 .spotify-status p {
+    font-weight: 400;
+    margin: 7px 0px 0px 0px;
     display: inline-flex;
     align-items: center;
 }
