@@ -7,7 +7,7 @@ class Spotify extends React.Component {
 
     render() { 
         return ( 
-            <div className={`spotify-status ${this.props.hide ? 'res' : ''} ${this.props.top ? 'top' : ''}`} id="spotify-status">
+            <div className={`spotify-status ${this.props.hide ? 'res' : ''}`} id="spotify-status">
                 <p>
                     {this.props.side === 'right' ? 
                         <><span style={{ paddingRight: '5px', opacity: this.props.opacity, fontSize: this.props.fontSize }}> {this.context.spotifyStatus} </span>
