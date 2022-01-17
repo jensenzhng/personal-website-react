@@ -8,6 +8,15 @@
     pointer-events:none;
   }
   
+  .cursors .cursor:nth-child(1) {
+    background-color: rgb(208, 208, 208);  
+    transition: opacity 0.1s ease-out;
+    -moz-transition: opacity 0.1s ease-out;
+    -webkit-transition: opacity 0.1s ease-out;
+    -o-transition: opacity 0.1s ease-out;
+    z-index: 100002;
+}
+
   .cursors .cursor:nth-child(2) {
     transition: opacity 0.1s ease-out;
     -moz-transition: opacity 0.1s ease-out;
@@ -15,10 +24,10 @@
     -o-transition: opacity 0.1s ease-out;
     z-index: 100001;
     border:2px solid rgb(208, 208, 208);    
-    height:18px;
+    height:24px;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width:18px;
+    width:24px;
     display: block;
   }

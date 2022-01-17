@@ -40,7 +40,7 @@ class BallCursor extends Component {
 
         this.setState({timer: setTimeout(() => {
                 this.setState({moving: false})
-            }, 500)
+            }, 550)
         });
       }
       
@@ -55,8 +55,8 @@ class BallCursor extends Component {
         },
         () => {
         // Using refs and transform for better performance.
-          this.cursor.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-          this.cursorTrailing.current.style.transform = `translate3d(${trailingX-10}px, ${trailingY-12}px, 0)`;
+          this.cursor.current.style.transform = `translate3d(${mouseX-4}px, ${mouseY-6}px, 0)`;
+          this.cursorTrailing.current.style.transform = `translate3d(${trailingX-13}px, ${trailingY-15}px, 0)`;
           this.animationFrame = requestAnimationFrame(this.moveCursor);
         });
       }
@@ -66,11 +66,14 @@ class BallCursor extends Component {
             <><div className="cursors">
                 <div
                     className="cursor"
-                    ref={this.cursor} />
+                    ref={this.cursor} 
+                    // style={this.state.moving ? {} : {opacity: '0'}} 
+                    />
                 <div
                     className='cursor'
                     ref={this.cursorTrailing}
-                    style={this.state.moving ? {} : {opacity: '0'}} />
+                    style={this.state.moving ? {} : {opacity: '0'}} 
+                    />
             </div></>
         )
     }
