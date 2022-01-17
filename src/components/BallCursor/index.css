@@ -10,6 +10,9 @@
   
   .cursors .cursor:nth-child(2) {
     transition: opacity 0.1s ease-out;
+    -moz-transition: opacity 0.1s ease-out;
+    -webkit-transition: opacity 0.1s ease-out;
+    -o-transition: opacity 0.1s ease-out;
     z-index: 100001;
     border:2px solid rgb(208, 208, 208);    
     height:18px;
