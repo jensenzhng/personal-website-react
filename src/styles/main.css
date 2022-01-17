@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,700&display=swap');
 
 * {
-  cursor: url('../images/cursor.png') 10 10, auto;
   font-family: 'Ubuntu', sans-serif;
   margin: 0px;
   color: white;
@@ -51,4 +50,25 @@ noscript {
   position: absolute;
   left: 50%;
   top: 50%;
+}
+
+.cursor {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events:none;
+}
+
+.cursors .cursor:nth-child(2) {
+  transition: opacity 0.1s ease-out;
+  z-index: 100001;
+  border:2px solid rgb(208, 208, 208);    
+  height:18px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:18px;
+  display: block;
 }
