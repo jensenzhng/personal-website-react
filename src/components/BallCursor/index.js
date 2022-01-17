@@ -40,7 +40,7 @@ class BallCursor extends Component {
 
         this.setState({timer: setTimeout(() => {
                 this.setState({moving: false})
-            }, 600)
+            }, 500)
         });
       }
       
