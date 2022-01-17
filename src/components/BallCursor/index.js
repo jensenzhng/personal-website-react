@@ -67,7 +67,7 @@ class BallCursor extends Component {
                 <div
                     className="cursor"
                     ref={this.cursor} 
-                    // style={this.state.moving ? {} : {opacity: '0'}} 
+                    style={this.state.moving ? {} : {opacity: '0'}} 
                     />
                 <div
                     className='cursor'
