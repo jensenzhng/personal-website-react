@@ -37,7 +37,7 @@ class Secret extends React.Component {
                 <div className="back">
                     { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <Link to="/about"> <code> &lt; back to about</code> </Link>
-                    <Spotify></Spotify>
+                    <Spotify {...{side: 'right', hide: 'true'}}></Spotify>
                 </div>
                 <div className="secret">
                     <h1>hey... you found my not-so-secret secret page...</h1>
