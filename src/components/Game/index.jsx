@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css'
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import BallCursor from '../BallCursor';
 
 function returnHome () {
     window.location.href = '/about';
@@ -12,6 +13,7 @@ let Game = () => {
         <><Helmet>
             <script src="./snake.js"></script>
         </Helmet>
+            <BallCursor />
             <div className="bigDiv">
                 <h1 className="startButton" id="startButton">hey! let's play a quick game.</h1>
                 <button id="startGame">start game</button>
