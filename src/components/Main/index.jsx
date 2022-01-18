@@ -8,7 +8,6 @@ class Main extends React.Component {
     render() {
         return (
             <>
-                <BallCursor />
                 <div className="aJK9fhel">
                     <FrostedPanel />
                     <Notification />

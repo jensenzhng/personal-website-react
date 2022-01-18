@@ -33,7 +33,6 @@ class Secret extends React.Component {
         
         return (
             <>
-                <BallCursor />
                 <div className="back">
                     { /* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                     <Link to="/about"> <code> &lt; back to about</code> </Link>

@@ -7,7 +7,7 @@ import BallCursor from '../BallCursor';
 class AboutPage extends React.Component {
     render() {
         return (
-            <><BallCursor /><div className="about-page">
+            <><div className="about-page">
                 <About />
                 <Footer />
             </div></>

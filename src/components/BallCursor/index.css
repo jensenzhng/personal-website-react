@@ -15,6 +15,7 @@
     -webkit-transition: opacity 0.1s ease-out;
     -o-transition: opacity 0.1s ease-out;
     z-index: 100002;
+    display: none;
 }
 
   .cursors .cursor:nth-child(2) {

@@ -13,7 +13,6 @@ let Game = () => {
         <><Helmet>
             <script src="./snake.js"></script>
         </Helmet>
-            <BallCursor />
             <div className="bigDiv">
                 <h1 className="startButton" id="startButton">hey! let's play a quick game.</h1>
                 <button id="startGame">start game</button>

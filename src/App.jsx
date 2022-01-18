@@ -6,6 +6,7 @@ import Game from './components/Game';
 import AboutPage from './components/AboutPage'
 import React from 'react'
 import { SpotifyContext } from './contexts/SpotifyContext';
+import BallCursor from './components/BallCursor';
 
 class App extends React.Component { 
     state = {
@@ -41,16 +42,16 @@ class App extends React.Component {
 
     render() {
         return (
-            <Router>
-              <SpotifyContext.Provider value={this.state}>
-                <Switch>
-                    <Route exact path="/" component={Main} />
-                    <Route path="/secret" component={Secret} />
-                    <Route path="/game" component={Game} />
-                    <Route path="/about" component={AboutPage} />
-                </Switch>
-              </SpotifyContext.Provider>
-            </Router>
+          <><BallCursor /><Router>
+            <SpotifyContext.Provider value={this.state}>
+              <Switch>
+                <Route exact path="/" component={Main} />
+                <Route path="/secret" component={Secret} />
+                <Route path="/game" component={Game} />
+                <Route path="/about" component={AboutPage} />
+              </Switch>
+            </SpotifyContext.Provider>
+          </Router></>
         )
     }
 }
