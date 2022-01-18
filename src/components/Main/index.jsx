@@ -2,7 +2,6 @@ import React from 'react';
 import ParticlesBackground from '../ParticlesBackground/';
 import FrostedPanel from '../FrostedPanel/';
 import Notification from '../Notification/';
-import BallCursor from '../BallCursor';
 
 class Main extends React.Component {
     render() {

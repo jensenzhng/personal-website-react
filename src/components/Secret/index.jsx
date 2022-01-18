@@ -6,7 +6,6 @@ import Footer from '../Footer/'
 import { Link } from 'react-router-dom';
 import { withRouter } from "react-router-dom";
 import Spotify from '../Spotify';
-import BallCursor from '../BallCursor';
 
 class Secret extends React.Component {
     constructor(props) {
