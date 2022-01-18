@@ -56,7 +56,7 @@ class BallCursor extends Component {
         () => {
         // Using refs and transform for better performance.
           this.cursor.current.style.transform = `translate3d(${mouseX-4}px, ${mouseY-6}px, 0)`;
-          this.cursorTrailing.current.style.transform = `translate3d(${trailingX-13}px, ${trailingY-15}px, 0)`;
+          this.cursorTrailing.current.style.transform = `translate3d(${trailingX-11}px, ${trailingY-12}px, 0)`;
           this.animationFrame = requestAnimationFrame(this.moveCursor);
         });
       }

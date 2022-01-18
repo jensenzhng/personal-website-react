@@ -26,10 +26,10 @@
     -o-transition: opacity 0.1s ease-out;
     z-index: 100001;
     border:2px solid rgb(208, 208, 208);    
-    height:24px;
+    height:18px;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width:24px;
+    width:18px;
     display: block;
   }
