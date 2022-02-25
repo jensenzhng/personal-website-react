@@ -12,7 +12,7 @@ const BrainlyUnblocker = { "title": "Brainly Unblocker", "tech": "Javascript", "
 // const offerIDBot = { "title": "Walmart Offer ID Bot", "tech": "Backend NodeJS + Discord API", "description": "Scrapes the Offer ID and information of a Walmart product given the SKU, or the SKU from an Offer ID. Useful when running Walmart bots that have Offer ID mode.", "githubLink": "https://github.com/jensenzhng/offer-id-bot"};
 const bbMonitorScript = { "title": "Best Buy Monitor Script", "tech": "Backend NodeJS", "description": "Scrapes the availability of a product on Best Buy.", "githubLink": "https://github.com/jensenzhng/best-buy-monitor"};
 const DiscordSniper = { "title": "Discord Sniper", "tech": "NodeJS + Discord API", "description": "A script that, given a Discord token, can instantly join servers and claim Nitros. Can be used to join exclusive invite-only Discord servers and to get free months of Nitro.", "githubLink": "https://github.com/jensenzhng/discord-toolbox"}
-const Idyll = { "title": "Idyll (In-Progress)", "tech": "Frontend HTML, CSS and JS + Backend Firebase, NodeJS", "description": "Check back soon...", "link": "https://idyll.shop/"};
+const Idyll = { "title": "Idyll", "tech": "React, Firebase, NodeJS", "description": "A marketplace to buy and sell food easily with people in your community. Currently a work in progress.", "link": "https://idyll.shop/"};
 // { "title": "", "tech": "", "description": "", "githubLink": ""};
 
 class Projects extends React.Component {
