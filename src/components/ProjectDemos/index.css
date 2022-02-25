@@ -1,0 +1,28 @@
+.description {
+    line-height: 1.7;
+    transition-duration: 0.5s;
+    color: white;
+    padding: 2rem 2.1rem 2rem 2.1rem;
+    margin: 0 auto;
+    max-width: 60rem;
+    transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 1000px){
+    .description {
+        max-width: 62rem;
+        padding-top: 2rem;
+    }
+} 
+
+video,img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 60rem;
+    transition-duration: 0.5s;
+}
+
+.description * {
+    margin-bottom: 0.8rem;
+}
