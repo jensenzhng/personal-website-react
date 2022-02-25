@@ -5,6 +5,8 @@ import Spotify from '../../Spotify';
 import '../../../styles/main.css'
 import monitor from '../../../videos/monitor.mov'
 import '../index.css'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 import { CodeBlock, dracula } from "react-code-blocks";
 
 class TwitterMonitor extends React.Component {
@@ -26,6 +28,19 @@ checkUser(user) {
 
 setInterval(() => this.getData(), 500);`
 
+    componentDidMount() {
+        this.detectVideoLoad()
+    }
+
+    detectVideoLoad() {
+        let video = document.getElementById('video');
+        let release = document.getElementsByClassName('release')[0];
+        video.addEventListener('canplaythrough', function () {
+            video.style.display = 'block';
+            release.style.display = 'none';
+        });
+    }
+
     render() {
         return (
             <>
@@ -37,7 +52,8 @@ setInterval(() => this.getData(), 500);`
                 <div className="aurora">
                     <h1> Twitter Monitor </h1>
                 </div>
-                <video src={monitor} autoPlay loop="loop" muted></video>
+                <video id="video" src={monitor} autoPlay loop="loop" muted style={{display: 'none'}}></video>
+                <Skeleton height={'300px'} width={'100%'} baseColor="#2e2e2e" highlightColor='#474747' className="release" /> 
                 <h2>What is this?</h2>
                 <p>In brief summary, this is a Discord Bot that instantly sends a webhook to a specified channel to let 
                     you know when a user posts a Tweet. You can monitor up to a hundred users on Twitter with 
