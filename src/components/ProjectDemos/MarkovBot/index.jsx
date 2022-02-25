@@ -6,7 +6,7 @@ import '../../../styles/main.css'
 import '../index.css'
 import { CodeBlock, dracula } from "react-code-blocks";
 
-class OrbitalVisualizer extends React.Component {
+class MarkovBot extends React.Component {
     code = `    {
         ...,
         "is": [
@@ -82,4 +82,4 @@ class OrbitalVisualizer extends React.Component {
     }
 }
 
-export default OrbitalVisualizer;
+export default MarkovBot;
