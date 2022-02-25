@@ -6,6 +6,8 @@ import Game from './components/Game';
 import AboutPage from './components/AboutPage'
 import TwitterMonitor from './components/ProjectDemos/TwitterMonitor/index.jsx'
 import OrbitalVisualizer from './components/ProjectDemos/OrbitalVisualizer';
+import MarkovBot from './components/ProjectDemos/MarkovBot';
+
 import React from 'react'
 import { SpotifyContext } from './contexts/SpotifyContext';
 import BallCursor from './components/BallCursor';
@@ -52,8 +54,8 @@ class App extends React.Component {
                 <Route path="/game" component={Game} />
                 <Route path="/about/monitor" component={TwitterMonitor} />
                 <Route path="/about/orbital" component={OrbitalVisualizer} />
+                <Route path="/about/markov" component={MarkovBot} />
                 <Route path="/about" component={AboutPage} />
-
               </Switch>
             </SpotifyContext.Provider>
           </Router></>
