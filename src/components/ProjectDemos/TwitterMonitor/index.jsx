@@ -46,7 +46,7 @@ setInterval(() => this.getData(), 500);`
                 <p>
                     Using Twitter API keys, this bot will fetch the latest metadata for all monitored users. 
                     Tweet IDs are snowflakes, meaning that each one can be converted into a timestamp. I noticed
-                    that the greater, the TweetID, the later the Tweet was posted. The bot will compare the latest TweetID 
+                    that the greater the TweetID, the later the Tweet was posted. The bot will compare the latest TweetID 
                     with one stored in memory, and if it is greater, that means it has detected a new Tweet.
                 </p>
                 <CodeBlock
