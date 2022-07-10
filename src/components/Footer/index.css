@@ -1,6 +1,6 @@
 footer {
   margin-top: 1rem;
-  max-width: 60rem;
+  max-width: 64rem;
   margin: 0 auto;
   text-decoration: none;
 }
@@ -14,7 +14,7 @@ footer {
 }
 
 .footer-container {
-  padding-left: 1rem;
+  padding-left: 0.25rem;
   display: inline-block;
   padding-bottom: 5rem;
 }

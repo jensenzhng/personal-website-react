@@ -7,6 +7,10 @@ ul {
     text-align: center;
 }
 
+.tech {
+    margin-top: 1.5rem;
+}
+
 li {
     text-align: inherit;
     display:flex;

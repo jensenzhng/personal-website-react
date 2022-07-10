@@ -86,6 +86,7 @@
     margin-bottom: 8px;
     transition-duration: 0.5s;
     pointer-events:all;
+    align-content: 'center';
   }
   
   .socials a {
@@ -94,15 +95,15 @@
   }
   
   .twitter-logo {
-  margin-right: 15px;
+  margin-right: 7px;
   }
   
   .github-logo {
-  margin-right: 15px;
+  margin-right: 7px;
   }
   
   .discord-logo {
-    margin-right: 15px;
+    margin-right: 10px;
   }
   
   .twitter-logo:hover {
