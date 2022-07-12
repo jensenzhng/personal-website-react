@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Spotify from '../Spotify';
 import { SpotifyContext } from '../../contexts/SpotifyContext';
 import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa'
-import { MdMail } from 'react-icons/md'
 
 class FrostedPanel extends React.Component {
     static contextType = SpotifyContext;

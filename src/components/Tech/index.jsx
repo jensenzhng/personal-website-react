@@ -20,63 +20,63 @@ class Tech extends React.Component {
             <ul className='tech'>
                 <li>
                     <span>
-                        <SiNodeDotJs size={30}></SiNodeDotJs>
+                        <SiNodeDotJs size={25} opacity={0.8}></SiNodeDotJs>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>JavaScript</span>
                 </li>
                 <li>
                     <span>
-                        <SiFirebase size={30}></SiFirebase>
+                        <SiFirebase size={25} opacity={0.8}></SiFirebase>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Firebase</span>
                 </li>
                 <li>
                     <span>
-                        <SiGithub size={30}></SiGithub>
+                        <SiGithub size={25}></SiGithub>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Github</span>
                 </li>
                 <li>
                     <span>
-                        <SiJava size={30}></SiJava>
+                        <SiJava size={25}></SiJava>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Java</span>
                 </li>
                 <li>
                     <span>
-                        <SiGit size={30}></SiGit>
+                        <SiIntellijidea size={25}></SiIntellijidea>
                     </span>
-                    <span style={{'paddingLeft': '12px'}}>Git</span>
+                    <span style={{'paddingLeft': '12px'}}>IntelliJ</span>
                 </li>
                 <li>
                     <span>
-                        <SiReact size={30}></SiReact>
+                        <SiReact size={25}></SiReact>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>React</span>
                 </li>
                 <li>
                     <span>
-                        <SiMongodb size={30}></SiMongodb>
-                    </span>
-                    <span style={{'paddingLeft': '12px'}}>MongoDB</span>
-                </li>
-                <li>
-                    <span>
-                        <SiPython size={30}></SiPython>
+                        <SiPython size={25}></SiPython>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Python</span>
                 </li>
                 <li>
                     <span>
-                        <SiVisualstudiocode size={30}></SiVisualstudiocode>
+                        <SiVisualstudiocode size={25}></SiVisualstudiocode>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>VS Code</span>
                 </li>
                 <li>
                     <span>
-                        <SiIntellijidea size={30}></SiIntellijidea>
+                        <SiGit size={25}></SiGit>
                     </span>
-                    <span style={{'paddingLeft': '12px'}}>IntelliJ</span>
+                    <span style={{'paddingLeft': '12px'}}>Git</span>
+                </li>
+                <li>
+                    <span>
+                        <SiMongodb size={25}></SiMongodb>
+                    </span>
+                    <span style={{'paddingLeft': '12px'}}>MongoDB</span>
                 </li>
                 
             </ul>
