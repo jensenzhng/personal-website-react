@@ -32,49 +32,49 @@ class Tech extends React.Component {
                 </li>
                 <li>
                     <span>
-                        <SiGithub size={25}></SiGithub>
+                        <SiGithub size={25} opacity={0.8}></SiGithub>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Github</span>
                 </li>
                 <li>
                     <span>
-                        <SiJava size={25}></SiJava>
+                        <SiJava size={25} opacity={0.8}></SiJava>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Java</span>
                 </li>
                 <li>
                     <span>
-                        <SiIntellijidea size={25}></SiIntellijidea>
+                        <SiIntellijidea size={25} opacity={0.8}></SiIntellijidea>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>IntelliJ</span>
                 </li>
                 <li>
                     <span>
-                        <SiReact size={25}></SiReact>
+                        <SiReact size={25} opacity={0.8}></SiReact>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>React</span>
                 </li>
                 <li>
                     <span>
-                        <SiPython size={25}></SiPython>
+                        <SiPython size={25} opacity={0.8}></SiPython>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Python</span>
                 </li>
                 <li>
                     <span>
-                        <SiVisualstudiocode size={25}></SiVisualstudiocode>
+                        <SiVisualstudiocode size={25} opacity={0.8}></SiVisualstudiocode>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>VS Code</span>
                 </li>
                 <li>
                     <span>
-                        <SiGit size={25}></SiGit>
+                        <SiGit size={25} opacity={0.8}></SiGit>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>Git</span>
                 </li>
                 <li>
                     <span>
-                        <SiMongodb size={25}></SiMongodb>
+                        <SiMongodb size={25} opacity={0.8}></SiMongodb>
                     </span>
                     <span style={{'paddingLeft': '12px'}}>MongoDB</span>
                 </li>
