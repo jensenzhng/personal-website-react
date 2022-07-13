@@ -13,7 +13,7 @@
 
 .back {
     line-height: 1.7;
-    max-width: 53rem;
+    max-width: 54rem;
     padding: 4rem 2.1rem 0rem 2.1rem;
     margin: 0 auto;
     opacity:0.75;
@@ -23,13 +23,6 @@
 }
 
 
-@media only screen and (max-width: 1000px){
-    .about {
-        max-width: 62rem;
-        padding-top: 2rem;
-    }
-} 
-
 @media only screen and (max-width:768px) {
     .intro-title h1{
         font-size: 2.9rem;
@@ -38,10 +31,16 @@
 
 @media only screen and (max-width:640px) {
     .intro-title h1{
-        font-size: 2.7rem;
+        font-size: 2.3rem;
     }
     .res {
         display: none !important; 
+    }
+    .back {
+        padding: 3rem 2.1rem 0rem 2.1rem;
+    }
+    .about {
+        padding: 0.5rem 2.1rem 2rem 2.1rem;
     }
 }
 
