@@ -29,6 +29,8 @@ class FrostedPanel extends React.Component {
                     </div> */}
                     <p>👋 Hey! I'm Jensen, a student at the Georgia Institute of Technology.</p>
                     <p> I am most comfortable with <code>NodeJS</code>, but I also can work with <code>Java</code> and <code>Python</code>. Feel free to reach out to me through my email below.</p>
+                    <p> Here is a link to my <a href="https://drive.google.com/file/d/12SSMePonUL29Ic7APLtKBBSrzASxsdml/view?usp=sharing" target='_blank'>résumé</a>.</p>
+                    
                     <div className="socials">
                         <a href="https://github.com/jensenzhng" className="github-logo" style={{ textDecoration: 'none' }}>
                             <FaGithubSquare size={27} />
