@@ -27,7 +27,7 @@ class FrostedPanel extends React.Component {
                         </a>
                         <h6 style={{ display: "inline-block", paddingLeft: '4px' }}>{this.context.spotifyStatus}</h6>
                     </div> */}
-                    <p>👋 Hey! I'm Jensen, and I am a sophomore at the Georgia Institute of Technology.</p>
+                    <p>👋 Hey! I'm Jensen, a student at the Georgia Institute of Technology.</p>
                     <p> I am most comfortable with <code>NodeJS</code>, but I also can work with <code>Java</code> and <code>Python</code>. Feel free to reach out to me through my email below.</p>
                     <div className="socials">
                         <a href="https://github.com/jensenzhng" className="github-logo" style={{ textDecoration: 'none' }}>

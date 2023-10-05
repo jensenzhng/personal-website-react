@@ -11,6 +11,7 @@ import ToysRUS from './components/ProjectDemos/ToysRUS';
 import React from 'react'
 import { SpotifyContext } from './contexts/SpotifyContext';
 import BallCursor from './components/BallCursor';
+import Resume from './components/Resume';
 
 class App extends React.Component { 
     state = {
@@ -51,6 +52,7 @@ class App extends React.Component {
               <Switch>
                 <Route exact path="/" component={Main} />
                 <Route path="/secret" component={Secret} />
+                <Route path="/resume" component={Resume} />
                 <Route path="/game" component={Game} />
                 <Route path="/about/monitor" component={TwitterMonitor} />
                 <Route path="/about/orbital" component={OrbitalVisualizer} />
