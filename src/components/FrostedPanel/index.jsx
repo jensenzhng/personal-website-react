@@ -3,7 +3,7 @@ import './index.css'
 import { Link } from 'react-router-dom';
 import Spotify from '../Spotify';
 import { SpotifyContext } from '../../contexts/SpotifyContext';
-import { FaGithubSquare, FaTwitterSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaTwitterSquare, FaFileAlt } from 'react-icons/fa'
 
 class FrostedPanel extends React.Component {
     static contextType = SpotifyContext;
@@ -28,17 +28,18 @@ class FrostedPanel extends React.Component {
                         <h6 style={{ display: "inline-block", paddingLeft: '4px' }}>{this.context.spotifyStatus}</h6>
                     </div> */}
                     <p>👋 Hey! I'm Jensen, a student at the Georgia Institute of Technology.</p>
-                    <p> I am most comfortable with <code>NodeJS</code>, but I also can work with <code>Java</code> and <code>Python</code>. Feel free to reach out to me through my email below.</p>
-                    <p> Here is a link to my <a href="https://drive.google.com/file/d/12SSMePonUL29Ic7APLtKBBSrzASxsdml/view?usp=sharing" target='_blank'>résumé</a>.</p>
+                    <p> I am most comfortable with <code>NodeJS</code>, but I also can work with <code>Java</code> and <code>Python</code>. Feel free to check out my résumé below.</p>
                     
                     <div className="socials">
+                        <a href="https://drive.google.com/file/d/12SSMePonUL29Ic7APLtKBBSrzASxsdml/view?usp=sharing" target='_blank' className="resume-logo" style={{ textDecoration: 'none' }}>
+                            <FaFileAlt size={27}/>
+                        </a>
                         <a href="https://github.com/jensenzhng" className="github-logo" style={{ textDecoration: 'none' }}>
                             <FaGithubSquare size={27} />
                         </a>
                         <a href="https://twitter.com/xdragonlord69" className="twitter-logo" style={{ textDecoration: 'none' }}>
                             <FaTwitterSquare size={27} />
                         </a>
-
                         <div className="about-link">
                             <Link to="/about"> <code>/about</code> </Link>
                         </div>
